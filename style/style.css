@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
+:root {
+    --font0: "Arial";
+    --color0: #3538dc; /* #dc3545;*/
+    --color1: #5656ff; /* #ff5d56;*/ 
+    --color2: #707070;
+    --color3: #f7f7f7;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +34,7 @@ header {
 
 /* TITULO DO SITE*/
 header h1 {
-  color: #dc3545;
+  color: var(--color0);
   font-size: 2.5rem;
 }
 header span {
@@ -80,7 +88,7 @@ header .navegacao-primaria li a:hover::after {
   width: 100%;
   height: 0px;
   padding: 0px;
-  border-bottom: 4px solid #dc3545;
+  border-bottom: 4px solid var(--color0);
 }
 
 /* DOWNLOAD CV */
@@ -105,13 +113,13 @@ header .navegacao-primaria li a:hover::after {
 .section-div h2 {
   font-family: "Poppins";
   font-weight: 600;
-  color: #f7f7f7;
+  color: var(--color3);
 }
 
 .section-div p {
   font-family: "Poppins";
   font-weight: 200;
-  color: #f7f7f7;
+  color: var(--color3);
 }
 
 .section-div a {
@@ -178,13 +186,13 @@ main .sobre {
 
 .sobre_titulo h1 {
   font-size: 2.5rem;
-  color: #ff5d56;
+  color: var(--color1);
   margin-bottom: 15px;
   font-family: "Berkshire Swash", cursive;
 }
 
 .sobre_titulo p {
-  color: #707070;
+  color: var(--color2);
   font-size: 1.4rem;
   margin-bottom: 1rem;
   position: relative;
@@ -201,7 +209,7 @@ main .sobre {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #dc3545;
+  background-color: var(--color0);
 }
 
 .sobre img {
@@ -226,7 +234,7 @@ main .sobre {
   animation: sobeSecao 0.5s ease-in-out forwards;
   grid-column: 2/-1;
   display: grid;
-  color: #707070;
+  color: var(--color2);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -243,7 +251,7 @@ main .sobre {
 }
 
 .sobre_texto h1::after {
-  background-color: #ff5d56;
+  background-color: var(--color1);
   height: 6px;
   width: 60px;
   margin: 20px 0;
@@ -268,7 +276,7 @@ main .sobre {
 }
 
 .sobre_info i {
-  color: #dc3545;
+  color: var(--color0);
   display: inline-block;
   padding-right: 15px;
   font-size: 1.5rem;
@@ -317,11 +325,11 @@ main .sobre {
 
   header .navegacao-primaria {
     display: none;
-    background-color: #f7f7f7;
+    background-color: var(--color3);
   }
 
   header i {
-    color: #f7f7f7;
+    color: var(--color3);
     font-size: 3rem;
     cursor: pointer;
   }
@@ -375,7 +383,7 @@ main .sobre {
 
 .my_services ul li i {
   font-size: 2.7rem;
-  color: #dc3545;
+  color: var(--color0);
 }
 
 .my_services ul li h3 {
@@ -386,7 +394,7 @@ main .sobre {
 }
 
 .my_services ul li p {
-  color: #707070;
+  color: var(--color2);
   font-size: 1.1rem;
 }
 
@@ -448,7 +456,7 @@ main .sobre {
 .resume_generico h2 {
     font-family: 'Poppins';
     font-size: 1.5rem;
-    background-color: #ff5d56;
+    background-color: var(--color1);
     justify-self: start;
     padding: 10px;
     border-radius: 3px;
@@ -471,7 +479,7 @@ main .sobre {
 }
 
 .experience_content ul {
-    color: #ff5d56;
+    color: var(--color1);
     gap: 10px;
     display: flex;
     cursor: pointer;
@@ -497,7 +505,7 @@ main .sobre {
 }
 
 .resume_generico .experience_content div span {
-    color: #dc3545;
+    color: var(--color0);
     font-family: 'Poppins';
     font-weight: bold;
 }
@@ -508,7 +516,7 @@ main .sobre {
 }
 
 .resume_generico .experience_content div p {
-    color: #707070;
+    color: var(--color2);
     font-size: 1.1rem;
 }
 
@@ -521,7 +529,7 @@ main .sobre {
 }
 
 .education_content ul {
-    color: #ff5d56;
+    color: var(--color1);
     gap: 10px;
     display: flex;
     cursor: pointer;
@@ -540,7 +548,7 @@ main .sobre {
 }
 
 .resume_generico .education_content div span {
-    color: #dc3545;
+    color: var(--color0);
     font-family: 'Poppins';
     font-weight: bold;
 }
@@ -551,6 +559,6 @@ main .sobre {
 }
 
 .resume_generico .education_content div p {
-    color: #707070;
+    color: var(--color2);
     font-size: 1.1rem;
 }
